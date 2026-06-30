@@ -28,8 +28,8 @@ namespace WinForms_Wordle
         {
             InitializeComponent();
 
-            possibleGuesses = LoadWords("validGuesses.txt");
-            possibleAnswers = LoadWords("answers.txt");
+            possibleGuesses = LoadWords(@"Text Files\validGuesses.txt");
+            possibleAnswers = LoadWords(@"Text Files\answers.txt");
 
             labels = new Label[6, 5]
             {

@@ -6,7 +6,6 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -23,6 +22,7 @@ namespace WinForms_Wordle
         private string answer;
         private StringBuilder currentGuess = new StringBuilder();
         private bool stopTakingInput = false;
+        private Timer popUpTimer;
 
         public Wordle()
         {
@@ -62,8 +62,9 @@ namespace WinForms_Wordle
                 { 'x', XKeyButton }, { 'c', CKeyButton },
                 { 'v', VKeyButton }, { 'b', BKeyButton },
                 { 'n', NKeyButton }, { 'm', MKeyButton }
-};
+            };
 
+            SetUpTimer();
             answer = GetAnswer();
         }
 
@@ -80,7 +81,7 @@ namespace WinForms_Wordle
             {
                 BackspaceButton();
             }
-            else if (key == '\r' && currentCol > 4)
+            else if (key == '\r')
             {
                 EnterButton();
                 e.Handled = true;
@@ -154,11 +155,6 @@ namespace WinForms_Wordle
             return File.ReadAllLines(filename).ToList();
         }
 
-        private void DarkTheme_CheckedChanged(object sender, EventArgs e)
-        {
-            CheckDarkTheme();
-        }
-
         private void BackspaceButton()
         {
             if (stopTakingInput) return;
@@ -171,22 +167,28 @@ namespace WinForms_Wordle
         {
             if (stopTakingInput) return;
 
+            if (currentCol < 5)
+            {
+                ShowPopUp("Not enough letters");
+                return;
+            }
+
             if (currentGuess.ToString() == answer)
             {
                 GuessResult();
-                MessageBox.Show($"Correct! You got it in {currentRow + 1} guesses!");
+                ShowPopUp($"You got it in {currentRow + 1}");
                 stopTakingInput = true;
             }
             else if (!IsValidWord())
             {
-                MessageBox.Show("Not in word list");
+                ShowPopUp("Not in word list");
             }
             else
             {
                 GuessResult();
                 if (currentRow > 4)
                 {
-                    MessageBox.Show($"You didnt get it! The word was '{answer}'");
+                    ShowPopUp($"'{answer.ToUpper()}'");
                 }
                 currentRow++;
                 currentCol = 0;
@@ -203,7 +205,7 @@ namespace WinForms_Wordle
         }
         private void EnterKeyButton_Click(object sender, EventArgs e)
         {
-            if (currentCol > 4) EnterButton();
+            EnterButton();
             ActiveControl = null;
         }
         private void BackKeyButton_Click(object sender, EventArgs e)
@@ -244,6 +246,34 @@ namespace WinForms_Wordle
                 button.ForeColor = Color.Black;
             }
 
+            popUpTimer.Stop();
+            TextPopUp.Visible = false;
+            CheckDarkTheme();
+            ActiveControl = null;
+        }
+
+        private void ShowPopUp(string message)
+        {
+            TextPopUp.Text = message;
+            TextPopUp.Visible = true;
+
+            popUpTimer.Start();
+        }
+
+        private void MyTimer_Tick(object sender, EventArgs e)
+        {
+            popUpTimer.Stop();
+            TextPopUp.Visible = false;
+        }
+        private void SetUpTimer()
+        {
+            popUpTimer = new Timer();
+            popUpTimer.Interval = 2000;
+            popUpTimer.Tick += MyTimer_Tick;
+        }
+
+        private void DarkTheme_CheckedChanged(object sender, EventArgs e)
+        {
             CheckDarkTheme();
             ActiveControl = null;
         }
@@ -257,6 +287,8 @@ namespace WinForms_Wordle
                 HeaderLine.BackColor = Color.White;
                 WordleTitle.ForeColor = Color.White;
                 ResetButton.ForeColor = Color.White;
+                TextPopUp.BackColor = Color.White;
+                TextPopUp.ForeColor = Color.Black;
 
                 foreach (Label label in labels)
                 {
@@ -278,6 +310,8 @@ namespace WinForms_Wordle
                 HeaderLine.BackColor = Color.Silver;
                 WordleTitle.ForeColor = Color.Black;
                 ResetButton.ForeColor = Color.Black;
+                TextPopUp.BackColor = Color.Black;
+                TextPopUp.ForeColor = Color.White;
 
                 foreach (Label label in labels)
                 {

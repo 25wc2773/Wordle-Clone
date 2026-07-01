@@ -91,6 +91,7 @@
             this.WKeyButton = new System.Windows.Forms.Button();
             this.QKeyButton = new System.Windows.Forms.Button();
             this.WordleTitle = new System.Windows.Forms.Label();
+            this.TextPopUp = new System.Windows.Forms.Label();
             this.MainGamePanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,7 +100,7 @@
             this.Word1Character1.BackColor = System.Drawing.Color.Transparent;
             this.Word1Character1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word1Character1.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word1Character1.Location = new System.Drawing.Point(80, 54);
+            this.Word1Character1.Location = new System.Drawing.Point(80, 62);
             this.Word1Character1.Name = "Word1Character1";
             this.Word1Character1.Size = new System.Drawing.Size(60, 60);
             this.Word1Character1.TabIndex = 1;
@@ -110,7 +111,7 @@
             this.Word1Character2.BackColor = System.Drawing.Color.Transparent;
             this.Word1Character2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word1Character2.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word1Character2.Location = new System.Drawing.Point(146, 54);
+            this.Word1Character2.Location = new System.Drawing.Point(146, 62);
             this.Word1Character2.Name = "Word1Character2";
             this.Word1Character2.Size = new System.Drawing.Size(60, 60);
             this.Word1Character2.TabIndex = 2;
@@ -121,7 +122,7 @@
             this.Word1Character3.BackColor = System.Drawing.Color.Transparent;
             this.Word1Character3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word1Character3.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word1Character3.Location = new System.Drawing.Point(212, 54);
+            this.Word1Character3.Location = new System.Drawing.Point(212, 62);
             this.Word1Character3.Name = "Word1Character3";
             this.Word1Character3.Size = new System.Drawing.Size(60, 60);
             this.Word1Character3.TabIndex = 3;
@@ -132,7 +133,7 @@
             this.Word1Character4.BackColor = System.Drawing.Color.Transparent;
             this.Word1Character4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word1Character4.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word1Character4.Location = new System.Drawing.Point(278, 54);
+            this.Word1Character4.Location = new System.Drawing.Point(278, 62);
             this.Word1Character4.Name = "Word1Character4";
             this.Word1Character4.Size = new System.Drawing.Size(60, 60);
             this.Word1Character4.TabIndex = 4;
@@ -143,7 +144,7 @@
             this.Word1Character5.BackColor = System.Drawing.Color.Transparent;
             this.Word1Character5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word1Character5.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word1Character5.Location = new System.Drawing.Point(344, 54);
+            this.Word1Character5.Location = new System.Drawing.Point(344, 62);
             this.Word1Character5.Name = "Word1Character5";
             this.Word1Character5.Size = new System.Drawing.Size(60, 60);
             this.Word1Character5.TabIndex = 5;
@@ -154,7 +155,7 @@
             this.Word2Character5.BackColor = System.Drawing.Color.Transparent;
             this.Word2Character5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word2Character5.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word2Character5.Location = new System.Drawing.Point(344, 120);
+            this.Word2Character5.Location = new System.Drawing.Point(344, 128);
             this.Word2Character5.Name = "Word2Character5";
             this.Word2Character5.Size = new System.Drawing.Size(60, 60);
             this.Word2Character5.TabIndex = 10;
@@ -165,7 +166,7 @@
             this.Word2Character4.BackColor = System.Drawing.Color.Transparent;
             this.Word2Character4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word2Character4.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word2Character4.Location = new System.Drawing.Point(278, 120);
+            this.Word2Character4.Location = new System.Drawing.Point(278, 128);
             this.Word2Character4.Name = "Word2Character4";
             this.Word2Character4.Size = new System.Drawing.Size(60, 60);
             this.Word2Character4.TabIndex = 9;
@@ -176,7 +177,7 @@
             this.Word2Character3.BackColor = System.Drawing.Color.Transparent;
             this.Word2Character3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word2Character3.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word2Character3.Location = new System.Drawing.Point(212, 120);
+            this.Word2Character3.Location = new System.Drawing.Point(212, 128);
             this.Word2Character3.Name = "Word2Character3";
             this.Word2Character3.Size = new System.Drawing.Size(60, 60);
             this.Word2Character3.TabIndex = 8;
@@ -187,7 +188,7 @@
             this.Word2Character1.BackColor = System.Drawing.Color.Transparent;
             this.Word2Character1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word2Character1.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word2Character1.Location = new System.Drawing.Point(80, 120);
+            this.Word2Character1.Location = new System.Drawing.Point(80, 128);
             this.Word2Character1.Name = "Word2Character1";
             this.Word2Character1.Size = new System.Drawing.Size(60, 60);
             this.Word2Character1.TabIndex = 6;
@@ -198,7 +199,7 @@
             this.Word2Character2.BackColor = System.Drawing.Color.Transparent;
             this.Word2Character2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word2Character2.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word2Character2.Location = new System.Drawing.Point(146, 120);
+            this.Word2Character2.Location = new System.Drawing.Point(146, 128);
             this.Word2Character2.Name = "Word2Character2";
             this.Word2Character2.Size = new System.Drawing.Size(60, 60);
             this.Word2Character2.TabIndex = 7;
@@ -209,7 +210,7 @@
             this.Word4Character5.BackColor = System.Drawing.Color.Transparent;
             this.Word4Character5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word4Character5.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word4Character5.Location = new System.Drawing.Point(344, 252);
+            this.Word4Character5.Location = new System.Drawing.Point(344, 260);
             this.Word4Character5.Name = "Word4Character5";
             this.Word4Character5.Size = new System.Drawing.Size(60, 60);
             this.Word4Character5.TabIndex = 20;
@@ -220,7 +221,7 @@
             this.Word4Character4.BackColor = System.Drawing.Color.Transparent;
             this.Word4Character4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word4Character4.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word4Character4.Location = new System.Drawing.Point(278, 252);
+            this.Word4Character4.Location = new System.Drawing.Point(278, 260);
             this.Word4Character4.Name = "Word4Character4";
             this.Word4Character4.Size = new System.Drawing.Size(60, 60);
             this.Word4Character4.TabIndex = 19;
@@ -231,7 +232,7 @@
             this.Word4Character3.BackColor = System.Drawing.Color.Transparent;
             this.Word4Character3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word4Character3.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word4Character3.Location = new System.Drawing.Point(212, 252);
+            this.Word4Character3.Location = new System.Drawing.Point(212, 260);
             this.Word4Character3.Name = "Word4Character3";
             this.Word4Character3.Size = new System.Drawing.Size(60, 60);
             this.Word4Character3.TabIndex = 18;
@@ -242,7 +243,7 @@
             this.Word4Character1.BackColor = System.Drawing.Color.Transparent;
             this.Word4Character1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word4Character1.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word4Character1.Location = new System.Drawing.Point(80, 252);
+            this.Word4Character1.Location = new System.Drawing.Point(80, 260);
             this.Word4Character1.Name = "Word4Character1";
             this.Word4Character1.Size = new System.Drawing.Size(60, 60);
             this.Word4Character1.TabIndex = 16;
@@ -253,7 +254,7 @@
             this.Word4Character2.BackColor = System.Drawing.Color.Transparent;
             this.Word4Character2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word4Character2.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word4Character2.Location = new System.Drawing.Point(146, 252);
+            this.Word4Character2.Location = new System.Drawing.Point(146, 260);
             this.Word4Character2.Name = "Word4Character2";
             this.Word4Character2.Size = new System.Drawing.Size(60, 60);
             this.Word4Character2.TabIndex = 17;
@@ -264,7 +265,7 @@
             this.Word3Character5.BackColor = System.Drawing.Color.Transparent;
             this.Word3Character5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word3Character5.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word3Character5.Location = new System.Drawing.Point(344, 186);
+            this.Word3Character5.Location = new System.Drawing.Point(344, 194);
             this.Word3Character5.Name = "Word3Character5";
             this.Word3Character5.Size = new System.Drawing.Size(60, 60);
             this.Word3Character5.TabIndex = 15;
@@ -275,7 +276,7 @@
             this.Word3Character4.BackColor = System.Drawing.Color.Transparent;
             this.Word3Character4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word3Character4.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word3Character4.Location = new System.Drawing.Point(278, 186);
+            this.Word3Character4.Location = new System.Drawing.Point(278, 194);
             this.Word3Character4.Name = "Word3Character4";
             this.Word3Character4.Size = new System.Drawing.Size(60, 60);
             this.Word3Character4.TabIndex = 14;
@@ -286,7 +287,7 @@
             this.Word3Character3.BackColor = System.Drawing.Color.Transparent;
             this.Word3Character3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word3Character3.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word3Character3.Location = new System.Drawing.Point(212, 186);
+            this.Word3Character3.Location = new System.Drawing.Point(212, 194);
             this.Word3Character3.Name = "Word3Character3";
             this.Word3Character3.Size = new System.Drawing.Size(60, 60);
             this.Word3Character3.TabIndex = 13;
@@ -297,7 +298,7 @@
             this.Word3Character1.BackColor = System.Drawing.Color.Transparent;
             this.Word3Character1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word3Character1.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word3Character1.Location = new System.Drawing.Point(80, 186);
+            this.Word3Character1.Location = new System.Drawing.Point(80, 194);
             this.Word3Character1.Name = "Word3Character1";
             this.Word3Character1.Size = new System.Drawing.Size(60, 60);
             this.Word3Character1.TabIndex = 11;
@@ -308,7 +309,7 @@
             this.Word3Character2.BackColor = System.Drawing.Color.Transparent;
             this.Word3Character2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word3Character2.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word3Character2.Location = new System.Drawing.Point(146, 186);
+            this.Word3Character2.Location = new System.Drawing.Point(146, 194);
             this.Word3Character2.Name = "Word3Character2";
             this.Word3Character2.Size = new System.Drawing.Size(60, 60);
             this.Word3Character2.TabIndex = 12;
@@ -319,7 +320,7 @@
             this.Word6Character5.BackColor = System.Drawing.Color.Transparent;
             this.Word6Character5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word6Character5.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word6Character5.Location = new System.Drawing.Point(344, 384);
+            this.Word6Character5.Location = new System.Drawing.Point(344, 392);
             this.Word6Character5.Name = "Word6Character5";
             this.Word6Character5.Size = new System.Drawing.Size(60, 60);
             this.Word6Character5.TabIndex = 30;
@@ -330,7 +331,7 @@
             this.Word6Character4.BackColor = System.Drawing.Color.Transparent;
             this.Word6Character4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word6Character4.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word6Character4.Location = new System.Drawing.Point(278, 384);
+            this.Word6Character4.Location = new System.Drawing.Point(278, 392);
             this.Word6Character4.Name = "Word6Character4";
             this.Word6Character4.Size = new System.Drawing.Size(60, 60);
             this.Word6Character4.TabIndex = 29;
@@ -341,7 +342,7 @@
             this.Word6Character3.BackColor = System.Drawing.Color.Transparent;
             this.Word6Character3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word6Character3.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word6Character3.Location = new System.Drawing.Point(212, 384);
+            this.Word6Character3.Location = new System.Drawing.Point(212, 392);
             this.Word6Character3.Name = "Word6Character3";
             this.Word6Character3.Size = new System.Drawing.Size(60, 60);
             this.Word6Character3.TabIndex = 28;
@@ -352,7 +353,7 @@
             this.Word6Character1.BackColor = System.Drawing.Color.Transparent;
             this.Word6Character1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word6Character1.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word6Character1.Location = new System.Drawing.Point(80, 384);
+            this.Word6Character1.Location = new System.Drawing.Point(80, 392);
             this.Word6Character1.Name = "Word6Character1";
             this.Word6Character1.Size = new System.Drawing.Size(60, 60);
             this.Word6Character1.TabIndex = 26;
@@ -363,7 +364,7 @@
             this.Word6Character2.BackColor = System.Drawing.Color.Transparent;
             this.Word6Character2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word6Character2.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word6Character2.Location = new System.Drawing.Point(146, 384);
+            this.Word6Character2.Location = new System.Drawing.Point(146, 392);
             this.Word6Character2.Name = "Word6Character2";
             this.Word6Character2.Size = new System.Drawing.Size(60, 60);
             this.Word6Character2.TabIndex = 27;
@@ -374,7 +375,7 @@
             this.Word5Character5.BackColor = System.Drawing.Color.Transparent;
             this.Word5Character5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word5Character5.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word5Character5.Location = new System.Drawing.Point(344, 318);
+            this.Word5Character5.Location = new System.Drawing.Point(344, 326);
             this.Word5Character5.Name = "Word5Character5";
             this.Word5Character5.Size = new System.Drawing.Size(60, 60);
             this.Word5Character5.TabIndex = 25;
@@ -385,7 +386,7 @@
             this.Word5Character4.BackColor = System.Drawing.Color.Transparent;
             this.Word5Character4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word5Character4.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word5Character4.Location = new System.Drawing.Point(278, 318);
+            this.Word5Character4.Location = new System.Drawing.Point(278, 326);
             this.Word5Character4.Name = "Word5Character4";
             this.Word5Character4.Size = new System.Drawing.Size(60, 60);
             this.Word5Character4.TabIndex = 24;
@@ -396,7 +397,7 @@
             this.Word5Character3.BackColor = System.Drawing.Color.Transparent;
             this.Word5Character3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word5Character3.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word5Character3.Location = new System.Drawing.Point(212, 318);
+            this.Word5Character3.Location = new System.Drawing.Point(212, 326);
             this.Word5Character3.Name = "Word5Character3";
             this.Word5Character3.Size = new System.Drawing.Size(60, 60);
             this.Word5Character3.TabIndex = 23;
@@ -407,7 +408,7 @@
             this.Word5Character1.BackColor = System.Drawing.Color.Transparent;
             this.Word5Character1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word5Character1.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word5Character1.Location = new System.Drawing.Point(80, 318);
+            this.Word5Character1.Location = new System.Drawing.Point(80, 326);
             this.Word5Character1.Name = "Word5Character1";
             this.Word5Character1.Size = new System.Drawing.Size(60, 60);
             this.Word5Character1.TabIndex = 21;
@@ -418,7 +419,7 @@
             this.Word5Character2.BackColor = System.Drawing.Color.Transparent;
             this.Word5Character2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Word5Character2.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Word5Character2.Location = new System.Drawing.Point(146, 318);
+            this.Word5Character2.Location = new System.Drawing.Point(146, 326);
             this.Word5Character2.Name = "Word5Character2";
             this.Word5Character2.Size = new System.Drawing.Size(60, 60);
             this.Word5Character2.TabIndex = 22;
@@ -443,6 +444,7 @@
             // 
             this.MainGamePanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MainGamePanel.AutoSize = true;
+            this.MainGamePanel.Controls.Add(this.TextPopUp);
             this.MainGamePanel.Controls.Add(this.ResetButton);
             this.MainGamePanel.Controls.Add(this.HeaderLine);
             this.MainGamePanel.Controls.Add(this.EnterKeyButton);
@@ -933,6 +935,19 @@
             this.WordleTitle.TabIndex = 62;
             this.WordleTitle.Text = "Wordle";
             // 
+            // TextPopUp
+            // 
+            this.TextPopUp.BackColor = System.Drawing.Color.Black;
+            this.TextPopUp.Font = new System.Drawing.Font("Franklin Gothic Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextPopUp.ForeColor = System.Drawing.Color.White;
+            this.TextPopUp.Location = new System.Drawing.Point(176, 40);
+            this.TextPopUp.Name = "TextPopUp";
+            this.TextPopUp.Size = new System.Drawing.Size(133, 36);
+            this.TextPopUp.TabIndex = 64;
+            this.TextPopUp.Text = "Pop Up";
+            this.TextPopUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TextPopUp.Visible = false;
+            // 
             // Wordle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1017,6 +1032,7 @@
         private System.Windows.Forms.Panel HeaderLine;
         private System.Windows.Forms.Label WordleTitle;
         private System.Windows.Forms.Button ResetButton;
+        private System.Windows.Forms.Label TextPopUp;
     }
 }
 
